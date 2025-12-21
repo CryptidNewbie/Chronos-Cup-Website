@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-white font-sans antialiased overflow-x-hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(123, 0, 204, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(128, 0, 32, 0.1) 0%, transparent 60%);
+  min-height: 100vh;
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-surface backdrop-blur-md border border-white/10 rounded-xl shadow-xl;
+  }
+  
+  .glass-button {
+    @apply px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 
+    backdrop-blur-sm transition-all duration-300 font-display font-semibold tracking-wide
+    hover:scale-105 active:scale-95 text-white/90 hover:text-white hover:border-white/40;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e17; 
+}
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

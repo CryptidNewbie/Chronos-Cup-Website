@@ -2,6 +2,7 @@ export interface Chapter {
     id: string;
     title: string;
     logline: string;
+    image?: string;
 }
 
 export interface Route {
@@ -44,9 +45,9 @@ export const storyData: BookData = {
             teaser: "A single, perfect croissant awakens a dangerous sensory power in Julian, forcing him to confront the frustrating mediocrity of his own life.",
             image: "/images/julian_intro.jpg", // Reusing or finding a better match
             chapters: [
-                { id: "P_01", title: "The Taste of Time", logline: "A single, perfect croissant awakens a dangerous sensory power in Julian, forcing him to confront the frustrating mediocrity of his own life." },
-                { id: "P_02", title: "The Three Paths", logline: "Julian obsesses over the bakery's secret, meeting three unique masters—the perfectionist, the bohemian, and the empath—each offering a different philosophy for his demanding new gift." },
-                { id: "P_03", title: "The Catalyst", logline: "As corporate pressure turns into external sensory interference, Julian's Siphon overloads, and he must choose immediately which guide can save him from the chaos." },
+                { id: "P_01", title: "The Taste of Time ☕", logline: "A single, perfect croissant awakens a dangerous sensory power in Julian, forcing him to confront the frustrating mediocrity of his own life.", image: "/images/julian_intro.jpg" },
+                { id: "P_02", title: "The Three Paths 🧭", logline: "Julian obsesses over the bakery's secret, meeting three unique masters—the perfectionist, the bohemian, and the empath—each offering a different philosophy for his demanding new gift.", image: "/images/P_02.jpg" },
+                { id: "P_03", title: "The Catalyst 🔥", logline: "As corporate pressure turns into external sensory interference, Julian's Siphon overloads, and he must choose immediately which guide can save him from the chaos.", image: "/images/P_03.jpg" },
             ]
         },
         {
@@ -55,12 +56,12 @@ export const storyData: BookData = {
             subtitle: "Path of Order",
             color: "text-kai-light",
             teaser: "Under Kai's demanding, silent regimen, Julian learns the exhausting beauty of precision, finding an unexpected spark in their shared, disciplined focus.",
-            image: "/images/kai_kiss.jpg", // Kiss image for romance route
+            image: "/images/K_01.jpg",
             chapters: [
-                { id: "K_01", title: "The Apprentice", logline: "Under Kai's demanding, silent regimen, Julian learns the exhausting beauty of precision, finding an unexpected spark in their shared, disciplined focus." },
-                { id: "K_02", title: "The Pressure Test", logline: "An attempt at emotional baking ends in disaster, forcing Kai's rigid control to shatter and revealing the immense vulnerability beneath his perfectionist shield." },
-                { id: "K_03", title: "Rule Breaking", logline: "Julian forces Kai to confront his feeling by tasting an imperfect treat, leading to a passionate, messy, and forbidden breach of structure in the sterile kitchen." },
-                { id: "K_04", title: "The Order Climax", logline: "Hand-in-hand, they build a luminous, geometric defense, anchoring their future in the unbreakable power of absolute, shared control." },
+                { id: "K_01", title: "The Apprentice", logline: "Under Kai's demanding, silent regimen, Julian learns the exhausting beauty of precision, finding an unexpected spark in their shared, disciplined focus.", image: "/images/K_01.jpg" },
+                { id: "K_02", title: "The Pressure Test", logline: "An attempt at emotional baking ends in disaster, forcing Kai's rigid control to shatter and revealing the immense vulnerability beneath his perfectionist shield.", image: "/images/K_02.jpg" },
+                { id: "K_03", title: "Rule Breaking", logline: "Julian forces Kai to confront his feeling by tasting an imperfect treat, leading to a passionate, messy, and forbidden breach of structure in the sterile kitchen.", image: "/images/K_03.jpg" },
+                { id: "K_04", title: "The Order Climax", logline: "Hand-in-hand, they build a luminous, geometric defense, anchoring their future in the unbreakable power of absolute, shared control.", image: "/images/K_04.jpg" },
             ]
         },
         {
@@ -69,12 +70,12 @@ export const storyData: BookData = {
             subtitle: "Path of Chaos",
             color: "text-alistair-light",
             teaser: "Julian's training begins in a chaotic library, where relying on pure instinct and a near-fall forges a thrilling, reckless connection with Alistair.",
-            image: "/images/alistair_magic.jpg", // Magic Swirl
+            image: "/images/A_01.jpg",
             chapters: [
-                { id: "A_01", title: "Dive into Disarray", logline: "Julian's training begins in a chaotic library, where relying on pure instinct and a near-fall forges a thrilling, reckless connection with Alistair." },
-                { id: "A_02", title: "The Forbidden Knowledge", logline: "Alistair introduces Julian to the truth of his power—a consuming, wild potential—fueling his reckless pursuit of artistic freedom." },
-                { id: "A_03", title: "The Chaotic Release", logline: "A fiery argument ignites a sensory surge, resulting in a passionate kiss that unleashes a storm of floating objects and untamed energy." },
-                { id: "A_04", title: "The Chaos Climax", logline: "Embracing the storm, Julian siphons the city's interference, learning to channel raw, terrifying energy into an art of limitless potential." },
+                { id: "A_01", title: "Dive into Disarray", logline: "Julian's training begins in a chaotic library, where relying on pure instinct and a near-fall forges a thrilling, reckless connection with Alistair.", image: "/images/A_01.jpg" },
+                { id: "A_02", title: "The Forbidden Knowledge", logline: "Alistair introduces Julian to the truth of his power—a consuming, wild potential—fueling his reckless pursuit of artistic freedom.", image: "/images/A_02.jpg" },
+                { id: "A_03", title: "The Chaotic Release", logline: "A fiery argument ignites a sensory surge, resulting in a passionate kiss that unleashes a storm of floating objects and untamed energy.", image: "/images/A_03.jpg" },
+                { id: "A_04", title: "The Chaos Climax", logline: "Embracing the storm, Julian siphons the city's interference, learning to channel raw, terrifying energy into an art of limitless potential.", image: "/images/A_04.jpg" },
             ]
         },
         {
@@ -83,12 +84,12 @@ export const storyData: BookData = {
             subtitle: "Path of Balance",
             color: "text-salvatore-light",
             teaser: "Salvatore introduces Julian to his hidden garden, teaching him to find peace and power by nurturing, rather than consuming, his ingredients.",
-            image: "/images/julian_intro.jpg", // Placeholder until Batch 2, or maybe alistair_library since it has books/garden vibe? No, sticking to intro.
+            image: "/images/S_01.jpg",
             chapters: [
-                { id: "S_01", title: "Grounding Ritual", logline: "Salvatore introduces Julian to his hidden garden, teaching him to find peace and power by nurturing, rather than consuming, his ingredients." },
-                { id: "S_02", title: "The Symbiotic Touch", logline: "A mistake leaves Julian drained, forcing Salvatore to heal him, creating a moment of profound energetic harmony between their two very different powers." },
-                { id: "S_03", title: "The Moonlight Embrace", logline: "Julian confesses his deepest fear of consumption, leading to a tender, vulnerable embrace and the promise of a life built on mutual regulation." },
-                { id: "S_04", title: "The Balance Climax", logline: "Acting as a filter, Salvatore guides Julian to siphon the chaos, stabilizing their future through the creation of a perfect, luminous harmony." },
+                { id: "S_01", title: "Grounding Ritual", logline: "Salvatore introduces Julian to his hidden garden, teaching him to find peace and power by nurturing, rather than consuming, his ingredients.", image: "/images/S_01.jpg" },
+                { id: "S_02", title: "The Symbiotic Touch", logline: "A mistake leaves Julian drained, forcing Salvatore to heal him, creating a moment of profound energetic harmony between their two very different powers.", image: "/images/S_02.jpg" },
+                { id: "S_03", title: "The Moonlight Embrace", logline: "Julian confesses his deepest fear of consumption, leading to a tender, vulnerable embrace and the promise of a life built on mutual regulation.", image: "/images/S_03.jpg" },
+                { id: "S_04", title: "The Balance Climax", logline: "Acting as a filter, Salvatore guides Julian to siphon the city's interference, stabilizing their future through the creation of a perfect, luminous harmony.", image: "/images/S_04.jpg" },
             ]
         }
     ]

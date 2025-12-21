@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import TeaserCard from '../components/TeaserCard';
 import ChapterList from '../components/ChapterList';
@@ -121,9 +122,9 @@ const Home: React.FC = () => {
                 <div className="glass-panel max-w-4xl mx-auto p-12 relative z-10 mx-4">
                     <h2 className="text-3xl font-bold mb-6">Ready to stop time?</h2>
                     <p className="mb-8 text-gray-400">The first chapters are waiting.</p>
-                    <button className="glass-button bg-gold/10 hover:bg-gold/20 text-gold border-gold/30">
+                    <Link to="/reader" className="glass-button bg-gold/10 hover:bg-gold/20 text-gold border-gold/30">
                         READ BOOK ONE
-                    </button>
+                    </Link>
                 </div>
             </section>
 

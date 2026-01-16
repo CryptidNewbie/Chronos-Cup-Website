@@ -3,14 +3,11 @@ import { motion } from 'framer-motion';
 
 const images = [
     { src: '/images/julian_intro.jpg', alt: 'The Bakery' },
-    { src: '/images/kai_hands.jpg', alt: 'Precision' },
-    { src: '/images/kai_kiss.jpg', alt: 'Passion' },
-    { src: '/images/alistair_library.jpg', alt: 'The Library' },
-    { src: '/images/alistair_magic.jpg', alt: 'Magic' },
     { src: '/images/A_01.jpg', alt: 'Alistair 1' },
     { src: '/images/A_02.jpg', alt: 'Alistair 2' },
     { src: '/images/A_03.jpg', alt: 'Alistair 3' },
     { src: '/images/A_04.jpg', alt: 'Alistair 4' },
+    { src: '/images/kai_hands.jpg', alt: 'Precision' },
     { src: '/images/K_01.jpg', alt: 'Kai 1' },
     { src: '/images/K_02.jpg', alt: 'Kai 2' },
     { src: '/images/K_03.jpg', alt: 'Kai 3' },

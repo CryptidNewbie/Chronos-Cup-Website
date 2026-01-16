@@ -30,7 +30,7 @@ export interface BookData {
 export const storyData: BookData = {
     title: "The Chronos Cup",
     subtitle: "The Three Paths",
-    blurb: "In Capitalia, the city where time is money, Julian dreams of flavors that demand reverence. When he stumbles into The Chronos Cup—an old brick sanctuary—he uncovers a profound sensory ability, his Siphon, and a secret war against the modern rush. Now, faced with a devastating external attack, Julian must choose a master: Kai's ruthless structure, Alistair's intoxicating chaos, or Salvatore's gentle balance. His choice will define his art, his power, and the love that anchors him against the storm.",
+    blurb: "Tired of life in Capitalia, where time is money, Julian finds a sanctuary in the Chronos Cup bakery. He also discovers a special ability in himself, his Siphon. Faced with an attack that threatens his new world, he must choose between structure, chaos, and balance — three paths, three masters, three loves to anchor him against the storm.",
     tagline: "Which path will stop time?",
     images: {
         hero: "/images/julian_intro.jpg", // Bakery/City (intro)
